@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun createBirthdayCard(view: View) {
-        Toast.makeText(applicationContext, "You clicked the button", Toast.LENGTH_LONG).show()
+
+        val name = nameInput.editableText.toString()
+        Toast.makeText(applicationContext, "Entered name is $name", Toast.LENGTH_LONG).show()
     }
 }
