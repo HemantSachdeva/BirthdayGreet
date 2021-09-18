@@ -27,6 +27,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/input_hint_text"
+        android:autofillHints="name"
         android:textAlignment="center"
         android:gravity="center_horizontal"
         android:minHeight="48dp"
